@@ -13,6 +13,11 @@ def historias():
     return render_template('historias.html')
 
 
+@app.route('/h_guarda_chuva_magico')
+def h_guarda_chuva_magico():
+    return render_template('h_guarda_chuva_magico.html')
+
+
 @app.route('/historias/<int:indice>')
 def historia(indice):
     return render_template('historia.html', indice=indice)

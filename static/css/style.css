@@ -1,13 +1,9 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fcf7c7;
+
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    padding: 1px;
 }
 
 /* Estilos para a área de boas-vindas */
@@ -47,4 +43,41 @@ body {
 
 .story-title {
     color: #ff6b6b;
+}
+
+.navbar-brand {
+
+    font-weight: bold;
+    font-size: 24px;
+}
+.nav-link {
+    font-size: 18px;
+}
+
+.container {
+    padding: 10px;
+    color: #000000;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.story-title {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-top: 20px;
+}
+.image-div {
+    text-align: center;
+    margin-top: 10px;
+}
+.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    font-size: 18px;
+}
+.btn-primary:hover {
+    background-color: #e64d4d;
 }

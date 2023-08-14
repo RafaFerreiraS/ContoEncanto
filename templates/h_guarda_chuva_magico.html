@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Histórias Infantis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('index') }}">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Histórias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="image-div">
+                <img src="{{ url_for('static', filename='/img/h_guarda_chuva_magico.jpeg') }}" alt="Imagem da história"
+                     class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="story-title">O Guarda-Chuva Mágico</h2>
+            <p>Em uma pequena vila, vivia uma adorável menina chamada Sofia. Ela tinha cabelos cacheados dourados e
+                olhos brilhantes como estrelas. Toda noite, antes de dormir, sua avó lhe contava histórias mágicas.
+                </br></br>
+                Um dia, enquanto explorava o jardim encantado, Sofia encontrou um guarda-chuva colorido esquecido
+                embaixo de uma árvore. Ela abriu o guarda-chuva e, para sua surpresa, foi levada para um mundo de
+                maravilhas. Cada vez que ela girava o guarda-chuva, viajava para um novo lugar cheio de criaturas
+                mágicas e paisagens deslumbrantes.
+                </br></br>
+                Em uma dessas aventuras, Sofia conheceu um pequeno cachorrinho chamado Pip. Pip tinha uma pelagem macia
+                e olhos curiosos que brilhavam como diamantes. Juntos, eles exploraram florestas encantadas, voaram
+                sobre montanhas majestosas e nadaram em rios cristalinos. Pip se tornou o companheiro perfeito para
+                Sofia, sempre pronto para embarcar em uma nova jornada.
+                </br></br>
+                Certa noite, enquanto estavam em uma terra de nuvens fofinhas, eles conheceram uma fada amigável chamada
+                Lila. Lila disse a Sofia que o guarda-chuva era um presente especial do mundo das fadas, que permitia
+                que ela viajasse entre os reinos. A fada também revelou que o guarda-chuva tinha poderes especiais de
+                proteção, mantendo-os sempre seguros em suas viagens.
+                </br></br>
+                Com o tempo, Sofia, Pip e Lila se tornaram amigos inseparáveis. Eles enfrentaram desafios emocionantes,
+                ajudaram criaturas mágicas em apuros e aprenderam lições valiosas ao longo de suas aventuras. Cada
+                noite, quando Sofia voltava para casa, fechava o guarda-chuva com um sorriso no rosto, ansiosa para suas
+                próximas explorações.
+                </br></br>
+                E assim, a menina, o guarda-chuva e o cachorrinho viveram muitas histórias emocionantes juntos, sempre
+                retornando para casa com corações cheios de alegria e memórias preciosas. E mesmo quando adormecia,
+                Sofia sabia que suas aventuras mágicas continuariam em seus sonhos, levando-a a lugares encantados além
+                da imaginação."
+                </br></br></br>
+                Agora, é hora de fechar os olhos e deixar sua imaginação voar para esse mundo de sonhos. Boa noite!
+                </br></br>
+            </p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Início</a>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
